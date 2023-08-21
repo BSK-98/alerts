@@ -1,0 +1,54 @@
+:root {
+    --success: '#4ADE80';
+    --warning: '#FB923C';
+    --danger: '#F87171';
+    --info: "#60A5FA";
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 8px;
+}
+.alert {
+    position: relative;
+    border: solid 2.5px transparent;
+    text-transform: capitalize
+}
+
+.alert-bottom-right, 
+.alert-bottom-left {
+    position: absolute;
+    bottom: 0;
+    pointer-events: none;
+    transition: all .5s ease-in-out;
+}
+.alert-bottom-right {
+    right: 40px;
+}
+
+.alert-border-left[data-alert-type="info"] {
+    border-left: 5.5px solid #60A5FA;
+}
+
+.alert-border-right[data-alert-type="info"] {
+    border-right: 5.5px solid #60A5FA;
+}
+
+.alert-border-bottom[data-alert-type="info"] {
+    border-bottom: 5.5px solid #60A5FA;
+}
+
+.alert-bottom-left {
+    left: 40px;
+}
+
+.alert-bottom-right.active, 
+.alert-bottom-left.active {
+    pointer-events: all;
+    transform: translateY(-100px);
+}
+
+body {
+    background-color: rgb(229, 229, 229);
+    margin: unset;
+}

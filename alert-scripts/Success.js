@@ -1,0 +1,5 @@
+class SuccessAlert {
+    successWithIcon (message) {
+        
+    }
+}
